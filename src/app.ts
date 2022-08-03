@@ -2,6 +2,9 @@ import express, { Request, Response, NextFunction } from 'express';
 import {json} from 'body-parser';
 import todoRoutes from './routes/todo'
 const app = express();
+/**
+ * adding middleware
+ */
 app.use(json())
 app.use('/todos', todoRoutes);
 
